@@ -4,101 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="#" class="logo">Hamdi M.</a> Portfolio</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="current"><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
-                </ul>
-            </nav>
+    <header class="sticky-top">
+        <div class="bg-info-subtle">
+            <div class="bg-primary pt-1 scroll-progress"></div>
         </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-primary-subtle fw-semibold">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="home.html">
+                    <span class="text-decoration-none text-success border border-3 fw-bold fst-italic border-success bg-info-subtle rounded-top-circle p-1 shadow">Hamdi M.</span> Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <ul class="navbar-nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-2 d-none d-md-inline">
+                            <a class="btn btn-success" href="pricing.html">Hire Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <section class="services-title-cover">
-            <h1>Services</h1>
-        </section>
-        <section class="what-I-do">
-            <h1>What I Do For You</h1>
-            <div class="service-list-container">
-                <div class="service-item">
-                    <img class="service-icon" src="images/web-dev-icon.png" alt="Web Development">
-                    <h2>Web Development</h2>
-                    <p>I specialize in crafting dynamic and responsive websites tailored to your needs. From conceptualization to deployment, I ensure a seamless user experience with visually appealing designs and efficient code, bringing your digital vision to life.</p>
+        <h1 class="display-3 bg-light text-center p-4 m-0">Services</h1>
+        <section class="container-fluid bg-primary-subtle py-2 pb-5">
+            <h2 class="text-center p-4 m-0">What I Do For You</h2>
+            <div class="container-fluid row text-center justify-content-center mx-auto">
+                <div class="bg-info-subtle border border-dark-subtle shadow border col-md-4 rounded p-3 m-md-0 m-2">
+                    <img class="w-25 p-2" src="assets/images/web-dev-icon.png" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>I specialize in crafting dynamic and responsive websites tailored to your needs. From
+                        conceptualization to deployment, I ensure a seamless user experience with visually appealing
+                        designs and efficient code, bringing your digital vision to life.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/app-dev-icon.png" alt="App Development">
-                    <h2>App Development</h2>
-                    <p>Dive into the world of innovative mobile applications. I create user-centric apps that captivate and engage. Whether it's iOS or Android, I leverage cutting-edge technologies to deliver seamless experiences, ensuring your app stands out in the crowded digital landscape.</p>
+                <div class="bg-info-subtle border border-dark-subtle shadow border col-md-4 rounded p-3 m-md-0 m-2 m-md-0 my-3">
+                    <img class="w-25 p-2" src="assets/images/app-dev-icon.png" alt="App Development">
+                    <h3>App Development</h3>
+                    <p>Dive into the world of innovative mobile applications. I create user-centric apps that captivate
+                        and engage. Whether it's iOS or Android, I leverage cutting-edge technologies to deliver
+                        seamless experiences, ensuring your app stands out in the crowded digital landscape.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/photo-icon.png" alt="Photography">
-                    <h2>Photography</h2>
-                    <p>Through my lens, I capture moments that tell unique stories. From portraits to landscapes, my photography is a blend of creativity and technical finesse. Whether it's a personal shoot or corporate event, I strive to immortalize memories with a distinctive and captivating visual narrative.</p>
+                <div class="bg-info-subtle border border-dark-subtle shadow border col-md-4 rounded p-3 m-md-0 m-2">
+                    <img class="w-25 p-2" src="assets/images/photo-icon.png" alt="Photography">
+                    <h3>Photography</h3>
+                    <p>Through my lens, I capture moments that tell unique stories. From portraits to landscapes, my
+                        photography is a blend of creativity and technical finesse. Whether it's a personal shoot or
+                        corporate event, I strive to immortalize memories with a distinctive and captivating visual
+                        narrative.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/seo-icon.png" alt="SEO Marketing">
-                    <h2>SEO Marketing</h2>
+                <div class="bg-info-subtle border border-dark-subtle shadow border col-md-4 rounded p-3 m-md-0 m-2">
+                    <img class="w-25 p-2" src="assets/images/seo-icon.png" alt="SEO Marketing">
+                    <h3>SEO Marketing</h3>
                     <p> I optimize your online presence for visibility. Through keyword research, on-page optimization, and strategic link building, I enhance your website's ranking, ensuring it stands out in search results.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/responsive-icon.png" alt="Responsive Design">
-                    <h2>Responsive Design</h2>
+                <div class="bg-info-subtle border border-dark-subtle shadow border col-md-4 rounded p-3 m-md-0 m-2">
+                    <img class="w-25 p-2" src="assets/images/responsive-icon.png" alt="Responsive Design">
+                    <h3>Responsive Design</h3>
                     <p>Specializing in responsive design, I create websites that adapt seamlessly to diverse devices. Prioritizing user experience, my designs ensure optimal functionality, regardless of screen size or device type.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/digital-icon.png" alt="Digital Marketing">
-                    <h2>Digital Marketing</h2>
+                <div class="bg-info-subtle border border-dark-subtle shadow border col-md-4 rounded p-3 m-md-0 m-2">
+                    <img class="w-25 p-2" src="assets/images/digital-icon.png" alt="Digital Marketing">
+                    <h3>Digital Marketing</h3>
                     <p>I orchestrate effective strategies to boost your online presence. From social media campaigns to targeted content, I drive engagement and elevate brand visibility for lasting impact.</p>
                 </div>
             </div>
         </section>
-        <section class="innovative-solutions">
-            <h1 class="resume-h1">Innovative Solutions To Boost Your Creative Projects</h1>
-            <div class="solutions-container">
-                <div class="solution-item">
-                    <img src="images/discuss.jpg" alt="Discuss the Project">
-                    <h2>Discuss the project</h2>
+        <section class="container-fluid bg-success-subtle py-5">
+            <h1 class="text-center pb-3">Innovative Solutions To Boost Your Creative Projects</h1>
+            <div class="container-fluid row mx-auto">
+                <div class="col-md-4 bg-info-subtle border border-dark-subtle p-0 rounded shadow m-3 m-md-0">
+                    <img class="w-100 rounded-top" src="assets/images/discuss.jpg" alt="Discuss the Project">
+                    <h2 class="p-2">Discuss the project</h2>
                 </div>
-                <div class="solution-item">
-                    <img src="images/develop-elaborate.jpg" alt="Develop and Elaborate">
-                    <h2>Develop and Elaborate</h2>
+                <div class="col-md-4 bg-info-subtle border-top border-bottom border-dark-subtle p-0 rounded shadow m-3 m-md-0">
+                    <img class="w-100 rounded-top" src="assets/images/develop-elaborate.jpg" alt="Develop and Elaborate">
+                    <h2 class="p-2">Develop and Elaborate</h2>
                 </div>
-                <div class="solution-item">
-                    <img src="images/approvement.jpg" alt="Final Approvement">
-                    <h2>Final Approvement</h2>
+                <div class="col-md-4 bg-info-subtle border border-dark-subtle p-0 rounded shadow m-3 m-md-0">
+                    <img class="w-100 rounded-top" src="assets/images/approvement.jpg" alt="Final Approvement">
+                    <h2 class="p-2">Final Approvement</h2>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
+    <footer class="container-fluid bg-dark">
+        <div class="container-xxl">
+            <p class="text-center pt-3"><a class="text-decoration-none text-success border border-3 fw-bold fst-italic border-success bg-info-subtle rounded-top-circle p-1 shadow" href="home.html">Hamdi M.</a></p>
+            <address class="w-75 row justify-content-evenly mx-auto" id="connect-directly">
+                <p class="col-md-4 text-center"><img class="me-2" src="assets/images/svg/phone-solid.svg" alt="Phone" width="20"> <a class="text-decoration-none text-success" href="#">+251 912 345 678</a></p>
+                <p class="col-md-4 text-center"><img class="me-2" src="assets/images/svg/envelope-solid.svg" alt="Email" width="20"> <a class="text-decoration-none text-success" href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
+                <p class="col-md-4 text-center"><img class="me-2" src="assets/images/svg/location-dot-solid.svg" alt="Location" width="20"> <a class="text-decoration-none text-success" href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
             </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">Scroll to Top 🔼</span></a>
+
+            <div class="row justify-content-between">
+                <p class="col-6 text-light">&copy; 2023 <a class="text-decoration-none" href="home.html"><span class="text-success border border-3 fw-bold fst-italic border-success bg-info-subtle rounded-top-circle p-1 shadow">Hamdi M.</span>™</a> | All Rights Reserved</p>
+                <div class="col-6 text-end">
+                    <a class="socials-item" href="https://github.com/hmyunis"><img class="m-1" src="assets/images/svg/github.svg" width="20" alt="Github"></a>
+                    <a class="socials-item" href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img class="m-1" src="assets/images/svg/linkedin.svg" width="20" alt="LinkedIn"></a>
+                    <a class="socials-item" href="https://t.me/Hamdi00"><img class="m-1" src="assets/images/svg/telegram.svg" width="20" alt="Telegram"></a>
+                    <a class="btn btn-success" href="#">🔼</a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
